@@ -1,0 +1,24 @@
+/* Style du logo */
+.logo {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	color: #2563eb;
+	font-family: Arial, sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-decoration: none;
+	transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.logo:hover {
+	color: #1d4ed8;
+	transform: scale(1.03);
+}
+
+.logo img {
+	width: 2.5rem;
+	height: 2.5rem;
+	object-fit: contain;
+}

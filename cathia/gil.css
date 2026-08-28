@@ -1,0 +1,27 @@
+* {padding: 0;}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+* Ajout du petit carré blanc devant les liens */
+.footer-column ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 5px;
+    height: 5px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+}
+
+/* Liens */
+.footer-column a {
+    color: #b0b7c6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    color: #ffffff;
+
+}

@@ -1,3 +1,14 @@
 *{
     margin: auto;
+<<<<<<< HEAD
+=======
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+>>>>>>> 1b8c63cab8d112a4bca7e13fadf7eeebbc002b2a
 }

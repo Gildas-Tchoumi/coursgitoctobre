@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logo FW</title>
+    <style>
+      :root {
+        --bg1: #0f172a;
+        --bg2: #111827;
+        --primary: #60a5fa;
+        --secondary: #a78bfa;
+        --accent: #34d399;
+        --text: #e5e7eb;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background: radial-gradient(circle at top, #1e293b 0%, var(--bg1) 30%, var(--bg2) 100%);
+        color: var(--text);
+      }
+
+      .logo {
+        width: 320px;
+        height: 320px;
+        display: grid;
+        place-items: center;
+        position: relative;
+      }
+
+      .ring {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+        padding: 14px;
+        box-shadow: 0 25px 60px rgba(96, 165, 250, 0.35);
+      }
+
+      .ring::before {
+        content: "";
+        position: absolute;
+        inset: 14px;
+        border-radius: 50%;
+        background: rgba(15, 23, 42, 0.85);
+        border: 2px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .inner {
+        position: relative;
+        z-index: 1;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, rgba(96, 165, 250, 0.14), rgba(167, 139, 250, 0.18));
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(4px);
+      }
+
+      .initials {
+        font-size: 6rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        background: linear-gradient(135deg, #dbeafe, #c4b5fd, #a7f3d0);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 0 18px rgba(167, 139, 250, 0.25);
+      }
+
+      .dot {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: var(--accent);
+        box-shadow: 0 0 18px rgba(52, 211, 153, 0.9);
+      }
+
+      .dot-1 { top: 28px; right: 42px; }
+      .dot-2 { bottom: 32px; left: 40px; }
+    </style>
+  </head>
+  <body>
+    <div class="logo" aria-label="Logo de la marque FW">
+      <div class="ring"></div>
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="inner">
+        <div class="initials">FW</div>
+      </div>
+    </div>
+  </body>
+</html>
